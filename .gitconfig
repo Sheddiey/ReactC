@@ -1,0 +1,10 @@
+[filter "lfs"]
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+[user]
+	name = "Shadrack "
+	email = 88189465+Sheddiey@users.noreply.github.com
+[gui]
+	recentrepo = C:/Users/shadr/OneDrive/Documents/GitHub/Shadrack-JavaScript
