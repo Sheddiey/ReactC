@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative&display=swap');
+
+:root {
+  --blue: #418ec6;
+  --marron: #7b2049;
+  --indigo: #1e2762;
+  --black: #000000;
+  --creme: #f5f5dc;
+  --green: #037803;
+  --red: #ff0000;
+
+  --numbersFont: 'Fredoka One', cursive;
+  --wordsFont: 'Cinzel Decorative', cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.App {
+  background: linear-gradient(
+    to right,
+    var(--blue),
+    var(--marron),
+    var(--indigo)
+  );
+  background-size: 200% 100%;
+  animation: animateBackground 10s ease-in-out infinite;
+
+  background-color: var(--creme);
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  gap: 20px;
+  padding: 20px 0px;
+}
+
+@keyframes animateBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
