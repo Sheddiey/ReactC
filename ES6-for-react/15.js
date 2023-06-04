@@ -25,22 +25,22 @@ console.clear();
 //   console.log(data);
 // });
 
- let list = [];
-$.get("https://jsonplaceholder.typicode.com/posts/1", (response) =>{
-    console.log(response);
+//  let list = [];
+// $.get("https://jsonplaceholder.typicode.com/posts/1", (response) =>{
+//     console.log(response);
 
-    const id = 1; 
-    $.get(`https://jsonplaceholder.typicode.com/posts/${id}`, (response) => {
-        console.log(response);
+//     const id = 1; 
+//     $.get(`https://jsonplaceholder.typicode.com/posts/${id}`, (response) => {
+//         console.log(response);
 
-        $.get(`https://jsonplaceholder.typicode.com/comments/${id}`, (response) => {
-            console.log(response);
-        });
-    });
-}).fail(err => {
-    console.log(err);
-});
+//         $.get(`https://jsonplaceholder.typicode.com/comments/${id}`, (response) => {
+//             console.log(response);
+//         });
+//     });
+// }).fail(err => {
+//     console.log(err);
+// });
 
 
 
-console.log(list);
+// console.log(list);
