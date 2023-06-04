@@ -1,8 +1,8 @@
 console.clear();
 
 const postListPromise = new Promise ((resolve, reject) => {
-    $.get('https://jsonplaceholder.typicode.com/posts', (data) => {
-        //console.log('GET POST LIST Response => ', data);
+    axios.get('https://jsonplaceholder.typicode.com/posts', (data) => {
+        console.log('GET POST LIST Response => ', data);
         resolve(100);
     }).fail(err => {
         reject(new Error(`Call failed for POst List Request with status ${err.status}`))
