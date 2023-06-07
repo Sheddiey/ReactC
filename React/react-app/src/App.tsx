@@ -3,8 +3,12 @@ import ListGroup from "./Components/ListGroup";
 //import { Fragment } from "react"; use empty angle brackets
 
 function App() {
-  return <div><ListGroup></ListGroup> <ListGroup></ListGroup></div>;
- 
+  let items = ["New York", "Kampala", "Nairobi", "Tunis", "Algiers"];
+  return (
+    <div>
+      <ListGroup items={items} heading="Cities"/>
+    </div>
+  );
 }
 
 export default App;
