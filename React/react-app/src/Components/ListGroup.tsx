@@ -1,24 +1,23 @@
-import { MouseEvent } from "react";
+import { useState } from "react";
 
 function ListGroup() {
   let items = ["New York", "Kampala", "Nairobi", "Tunis", "Algiers"];
+  const [selectedIndex, setSelectedIndex] = useState(-1);
 
 
-  //event handler 
-  const handleClick = (event: MouseEvent) => {console.log(event)}
 
   return (
     //a better way is to use fragments instead of a div element
     <>
       <h1>List</h1>
       {/* {items.length === 0 ? <p>No item found</p> : null}; */}
-      {items.length === 0 && <p>No item found</p>};
+      {items.length === 0 && <p>No item found</p>}
       <ul className="list-group">
         {items.map((item, index) => (
           <li
-            className="list-group-item"
+            className= {selectedIndex === index ? 'list-group-item active' : 'list-group'}
             key={item}
-            onClick={handleClick}
+            onClick={() => {setSelectedIndex(index)}}
           >
             {item}
           </li>

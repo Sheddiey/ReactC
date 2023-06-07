@@ -3,10 +3,19 @@ import ListGroup from "./Components/ListGroup";
 //import { Fragment } from "react"; use empty angle brackets
 
 function App() {
-  //JSx : JavaScript XML
+  return <div><ListGroup></ListGroup> <ListGroup></ListGroup></div>;
+ 
+}
+
+export default App;
+
+
+
+
+ //JSx : JavaScript XML
   //return <div><Message></Message></div>;
   //return <div><ListGroup></ListGroup></div>
-  return ListGroup();
+  
 
 
   // if (items.length === 0) //repetion is not instead we are gonna render conditionally
@@ -22,6 +31,3 @@ function App() {
   // const getMessage = () => {
   //   return items.length === 0 ? <p>No item found</p> : null;
   // };
-}
-
-export default App;
