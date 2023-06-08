@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-
+//state vs props 
 interface Props {
     items: string[]
     heading: string;
