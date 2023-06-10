@@ -1,14 +1,19 @@
 
 
+
+
 interface Props {
-    text: string;
+    children: string;
+    color?: string;
+    onClick: () => void;
 }
 
 
-function Button ({text}: Props) {
+
+const Button = ({children, color = 'secondary', onClick}: Props) => {
     return (
-        <div className="btn btn-warning">{text}</div>
+    <div className={"btn btn-" + color} onClick={onClick}>{children}</div>
     )
-}
+};
 
 export default Button;

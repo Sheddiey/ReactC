@@ -8,7 +8,7 @@ function App() {
       <Alert>
         Hello world <span>YOOH</span>
       </Alert>
-      <Button text = "Button"/>
+      <Button  onClick={() => console.log("Clicked!")}>My Button</Button>
 
     </div>
   );
