@@ -1,3 +1,4 @@
+import Button from "./Components/Button";
 import Alert from "./Components/alert";
 
 
@@ -7,6 +8,8 @@ function App() {
       <Alert>
         Hello world <span>YOOH</span>
       </Alert>
+      <Button text = "Button"/>
+
     </div>
   );
 }
