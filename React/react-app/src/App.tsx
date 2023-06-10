@@ -1,11 +1,12 @@
-//import Message  from "./message";
-import ListGroup from "./Components/ListGroup";
-//import { Fragment } from "react"; use empty angle brackets
+import Alert from "./Components/alert";
+
 
 function App() {
   return (
     <div>
-      <Alert />
+      <Alert>
+        Hello world <span>YOOH</span>
+      </Alert>
     </div>
   );
 }

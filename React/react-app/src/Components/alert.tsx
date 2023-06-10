@@ -1,9 +1,15 @@
-const alert = () => {
+import { ReactNode } from "react";
+
+interface Props{
+  children: ReactNode;
+}
+
+
+
+const Alert = ({children}: Props) => {
   return (
-    <>
-      <div>alert</div>;<h2> Hello this is my react app</h2>
-    </>
-  );
+    <div className="alert alert-primary">{children}</div>
+  )
 };
 
-export default alert;
+export default Alert;
