@@ -4,7 +4,7 @@
 
 interface Props {
     children: string;
-    color?: 'primary';
+    color?: 'secondary';
     onClick: () => void;
 }
 
