@@ -11,7 +11,7 @@ const [alertVisible, setAlertVisibility] = useState(false);
   return (
     <div>
       <Alert>
-        Hello world <span>YOOH</span>
+        Hello world jjjj<span>YOOH</span>
       </Alert>
       {alertVisible && <AlertButton onClose={() => setAlertVisibility(false)} >My Alert</AlertButton>}
       <Button color="secondary"  onClick={() => setAlertVisibility(true)}>My Button</Button>
